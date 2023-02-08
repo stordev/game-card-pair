@@ -1,0 +1,40 @@
+@import 'vars';
+
+.game {
+    padding: 3rem 4rem;
+    border-radius: 0.75rem;
+    background-color: #C2F5FF;
+
+    &__title {
+        width: 25rem;
+    }
+
+    &__level {
+        margin: 3rem 0;
+        flex-direction: row;
+
+        & li:first-child {
+            margin-left: 0;
+        }
+
+        & li:last-child {
+            margin-right: 0;
+        }
+
+        & li {
+            margin: 0 1.5rem;
+            padding: 0.75rem 1.25rem;
+            font-size: 4rem;
+            border-radius: 0.75rem;
+            background-color: #fff;
+            color: #0080C1;
+            list-style-type: none;
+            text-decoration: none;
+
+            &:hover {
+                background-color: darken(#fff, 10%);
+            }
+        }
+
+    }
+}
