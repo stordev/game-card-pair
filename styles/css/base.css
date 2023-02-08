@@ -1,0 +1,73 @@
+@charset "UTF-8";
+*,
+:before,
+:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1.1111111111vw;
+  font-family: Orbitron, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  padding: 0 2rem;
+  background-color: #004980;
+  color: #000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  letter-spacing: 0.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  --webkit-flex-direction: column;
+  --webkit-justify-content: center;
+  --webkit-align-items: center;
+  --moz-flex-direction: column;
+  --moz-justify-content: center;
+  --moz-align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
+}
+
+.btn {
+  font-size: 1.5rem;
+  min-width: 15rem;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.75rem;
+  background-color: #7AC100;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-family: inherit;
+}
+.btn:hover {
+  background-color: #5a8e00;
+}
+
+.hidden {
+  display: none;
+}
+
+:hover {
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+footer {
+  font-size: 0.5rem;
+  color: #80a0c0;
+}
+footer::before {
+  content: "Copyright ©2023 Dmitry Stor ·StorDev ·All rights reserved ·Card Pair Game";
+}
